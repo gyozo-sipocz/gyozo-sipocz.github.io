@@ -15,30 +15,73 @@
                 <li class="header-list_item"><a href="#about">ABOUT</a></li>
                 <li class="header-list_item"><a href="#work">WORK</a></li>
             </ul>
-            <a href="#" class="header-contact">Say Hi!</a>
+            <a href="#contact" class="header-contact">Say Hi!</a>
         </nav>
     </header>
     <main>
         <section id="main">
             <div class="main-container">
                 <h1 class="main-title">Frontend Developer.</h1>
-                <h2 class="main-vision">I'm an enthusiastic developer and I love what I do.</h2>
+                <h2 class="main-vision">I'm an enthusiastic frontend developer and I love what I do.</h2>
             </div>
             <img src="./img/gs.png" alt=" Győző Sipőcz" class="main-img">
         </section>
         <section id="about">
             <h2 class="about-title">Hi, I'm Győző. It's a pleasure to meet you.</h2>
             <p class="about-intro">I've gathered valuable experiences from different retail sales channels. My goal is to turn those experiences into scalable digital products. Since I've started my professional career, I've collaborated with people from all across the globe both on a remote and on-site setup. My natural curiosity pushes me to learn new things, further improve my knowledge to feed my customers with best-in-class services to deliver a flawless user experience. </p>
-            <div class="about-container"></div>
         </section>
         <section class="about-skills">
             <div class="about-skills_html">
                 <img src="./img/html5.svg" alt="HTML5">
+                <h3 class="about-skills-html_desc">HTML 5</h3>
+                <p class="about-skills-html_desc_broad">I use simple HTML structures that are easy to maintain and scale up.</p>
             </div>
             <div class="about-skills_css">
                 <img src="./img/css.svg" alt="CSS">
+                <h3 class="about-skills-css_desc">CSS</h3>
+                <p class="about-skills-css_desc_broad">Clean, well structured style sheets that contributes to smooth user experience.</p>
             </div>
         </section>
+        <section id="work">
+            <div class="work-container">
+                <h2 class="work-container-intro">My Recent Work</h2>
+                <p class="work-container-desc">Check out some of the latest project I've been working on. Want to learn more about?</p>
+                <a href="#" class="work-container-contact">Drop me a note</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="contact-title">Interested in collaborating with me?</h2>
+            <h3 class="contact-desc">I'm always to open to talk about how I can contribute to the growth of your business.</h3>
+            <form action="https://formspree.io/f/xknedwbp" class="contact-form" method="POST">
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <textarea name="message" id="message" placeholder="Tell me briefly what I can help you with"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <a href="#main"><img src="./img/logo.png" alt="GS"></a>
+        </div>
+        <div class="footer-container-social">
+            <ul class="footer-container-social-platform">
+                <li class="footer-social-item">
+                    <a href="https://twitter.com/?lang=hu" target="_blank"><img src="./img/twitter.svg" alt="twitter"></a>
+                </li>
+            </ul>
+            <ul class="footer-container-social-item">
+                <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin-in.svg" alt="linkedin"></a>
+            </ul>
+            <ul class="footer-container-social-item">
+                <a href="https://github.com/gyozo-sipocz/gyozo-sipocz.github.io" target="_blank"><img src="./img/github-alt.svg" alt="github"></a>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copyright-item">Copyright</p>
+            <span class="footer-copyright-item">&copy;</span>
+            <p class="footer-copyright-item">2022 Gyozo Sipocz</p>
+        </div>
+    </footer>
 </body>
 </html>
