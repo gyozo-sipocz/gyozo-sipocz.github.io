@@ -1,0 +1,15 @@
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title{
+    font-size: 2rem;
+}
+
+.main-img{
+    width: 25%;
+}

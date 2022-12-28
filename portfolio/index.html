@@ -5,26 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Győző Sipőcz | Frontend Developer</title>
-    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <a href="#main" class="header-logo"><img src="./img/logo.png" alt="GS"></a>
+        <a href="#main" class="header-logo"><img src="./img/logo.svg" alt="GS"></a>
         <nav>
             <ul class="header-list">
-                <li class="header-list_item"><a href="#about">ABOUT</a></li>
-                <li class="header-list_item"><a href="#work">WORK</a></li>
+                <li class="header-list_item"><a href="#about">About</a></li>
+                <li class="header-list_item"><a href="#work">Work</a></li>
+                <li class="header-list_item"><a href="#contact" class="header-hero">Say Hi!</a></li>
             </ul>
-            <a href="#contact" class="header-contact">Say Hi!</a>
         </nav>
     </header>
     <main>
         <section id="main">
             <div class="main-container">
                 <h1 class="main-title">Frontend Developer.</h1>
-                <h2 class="main-vision">I'm an enthusiastic frontend developer and I love what I do.</h2>
+                <p class="main-vision">I'm an enthusiastic frontend developer and I love what I do.</p>
+                <img src="./img/gs.png" alt=" Győző Sipőcz" class="main-img">
             </div>
-            <img src="./img/gs.png" alt=" Győző Sipőcz" class="main-img">
         </section>
         <section id="about">
             <h2 class="about-title">Hi, I'm Győző. It's a pleasure to meet you.</h2>
@@ -62,7 +70,7 @@
     </main>
     <footer>
         <div class="footer-container">
-            <a href="#main"><img src="./img/logo.png" alt="GS"></a>
+            <a href="#main"><img src="./img/logo.svg" alt="GS"></a>
         </div>
         <div class="footer-container-social">
             <ul class="footer-container-social-platform">
