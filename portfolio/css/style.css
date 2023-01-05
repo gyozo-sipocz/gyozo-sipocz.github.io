@@ -1,0 +1,119 @@
+:root{
+    --blue: #2018CB;
+    --white: #FFFFFF;
+    --white2: #FBFBFB;
+    --black: #000000;
+    --main-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background: var(--white2);
+    letter-spacing: 0.1rem;
+}
+
+img{
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+/* ------------------------ Header ------------------------ */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header img{
+    width: 10vw;
+}
+
+header nav{
+    width: 100%;
+}
+
+.header-list{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 3rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.header-list-about{
+    color: var(--black);
+}
+
+.header-list-about:hover{
+    color: var(--blue);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.header-list-work{
+    color: var(--black);
+}
+
+.header-list-work:hover{
+    color: var(--blue);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.header-hero{
+    color: var(--blue);
+    font-weight: 500;
+    border: 1.5px solid;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.header-hero:hover{
+    color: var(--white2);
+    background: var(--blue);
+    transition: 0.3s;
+}
+
+/* ------------------------ Main ------------------------ */
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+
+.main-title{
+    font-size: 4rem;
+    font-weight: 1000;
+}
+
+.main-img{
+    width: 25%;
+}
+
+.main-title{
+    padding: 2rem;
+}
+
+.main-vision{
+    font-size: 2rem;
+    font-weight: 400;
+}
