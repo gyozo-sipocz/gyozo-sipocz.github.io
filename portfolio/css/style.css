@@ -7,13 +7,12 @@
 }
 
 *{
-    margin: 30px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     background: var(--white2);
-    letter-spacing: 0.1rem;
 }
 
 img{
@@ -31,15 +30,17 @@ body{
 
 /* ------------------------ Header ------------------------ */
 
-header{
+#header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 50px 5px 0px 5px;
+    height: 5vh;
+    
 }
 
-header img{
-    width: 10vw;
+.header-logo{
+    max-height: 100px;
 }
 
 header nav{
@@ -49,10 +50,9 @@ header nav{
 .header-list{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    gap: 3rem;
-    padding: 2rem;
-    font-size: 1.2rem;
+    gap: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
 }
 
 .header-list-about{
@@ -78,9 +78,9 @@ header nav{
 .header-hero{
     color: var(--blue);
     font-weight: 500;
-    border: 1.5px solid;
+    border: 1.2px solid;
     border-radius: 30px;
-    padding: 1rem;
+    padding: 7px;
 }
 
 .header-hero:hover{
@@ -92,21 +92,22 @@ header nav{
 /* ------------------------ Main ------------------------ */
 
 .main-container{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -200px;
+    margin: 20px;
+    text-align: center;
 }
 
 .main-title{
-    font-size: 4rem;
+    font-size: 1.7rem;
     font-weight: 1000;
 }
 
 .main-img{
-    width: 25%;
+    max-width: 200px;
 }
 
 .main-title{
@@ -114,6 +115,172 @@ header nav{
 }
 
 .main-vision{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 400;
+}
+
+/* ------------------- About ------------------- */
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+/* ------------------------ Media query ------------------------ */
+/* ------------------- Base ------------------- */
+
+@media screen and (min-width: 576px){
+    .section-cim{
+      font-size: 2.5rem;
+    }
+  }
+
+/* ------------------- Header ------------------- */
+
+@media screen and (min-width: 576px){
+    .header-list{
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
+    .header-logo{
+        max-height: 150px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header-list{
+        font-size: 2rem;
+        gap: 1.5rem;
+        margin: 2rem;
+    }
+
+    .header-logo{
+        max-height: 200px;
+    }
+}
+
+/* ------------------- Main ------------------- */
+
+@media screen and (min-width: 576px){
+    .main-title{
+        font-size: 2rem;
+        font-weight: 1000;
+    }
+
+    .main-vision{
+        font-size: 1.5rem;
+    }
+
+    .main-img{
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-title{
+        font-size: 2.5rem;
+        font-weight: 1000;
+    }
+
+    .main-vision{
+        font-size: 2rem;
+    }
+
+    .main-img{
+        max-width: 300px;
+    }
+}
+
+/* ------------------- About ------------------- */
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+/* ------------------- Work ------------------- */
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+/* ------------------- Portfolio ------------------- */
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+/* ------------------- Contact ------------------- */
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+/* ------------------- Footer ------------------- */
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+    
 }

@@ -14,8 +14,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <a href="#main" class="header-logo"><img src="./img/logo.svg" alt="GS"></a>
+    <header id="header">
+        <div class="navbar-logo">
+            <a href="#main"><img class="header-logo" src="./img/logo.svg" alt="GS"></a>
+        </div>
         <nav>
             <ul class="header-list">
                 <li class="header-list_item"><a href="#about" class="header-list-about">About</a></li>
@@ -33,26 +35,64 @@
             </div>
         </section>
         <section id="about">
-            <h2 class="about-title">Hi, I'm Győző. It's a pleasure to meet you.</h2>
-            <p class="about-intro">I've gathered valuable experiences from different retail sales channels. My goal is to turn those experiences into scalable digital products. Since I've started my professional career, I've collaborated with people from all across the globe both on a remote and on-site setup. My natural curiosity pushes me to learn new things, further improve my knowledge to feed my customers with best-in-class services to deliver a flawless user experience. </p>
+            <div class="about-container">
+                <h2 class="about-title">Hi, I'm Győző. It's a pleasure to meet you.</h2>
+                <p class="about-intro">I've gathered valuable experiences from different retail sales channels. My goal     is to turn those experiences into scalable digital products. Since I've started my professional career,     I've collaborated with people from all across the globe both on a remote and on-site setup. My natural  curiosity pushes me to learn new things, further improve my knowledge to feed my customers with  best-in-class services to deliver a flawless user experience. </p>
+            </div>
         </section>
         <section class="about-skills">
-            <div class="about-skills_html">
+            <div class="about-skills_col">
                 <img src="./img/html5.svg" alt="HTML5">
-                <h3 class="about-skills-html_desc">HTML 5</h3>
-                <p class="about-skills-html_desc_broad">I use simple HTML structures that are easy to maintain and scale up.</p>
+                <h3 class="about-skills-html">HTML 5</h3>
+                <p class="about-skills-html_desc">I use simple HTML structures that are easy to maintain and scale up.</p>
+                <p class="about-skills-html_list">Tools I use:</p>
+                <ul>
+                    <li>Github</li>
+                    <li>Codesandbox</li>
+                    <li>Codepen</li>
+                </ul>
             </div>
-            <div class="about-skills_css">
+            <div class="about-skills_col">
                 <img src="./img/css.svg" alt="CSS">
-                <h3 class="about-skills-css_desc">CSS</h3>
-                <p class="about-skills-css_desc_broad">Clean, well structured style sheets that contributes to smooth user experience.</p>
+                <h3 class="about-skills-css">CSS</h3>
+                <p class="about-skills-css_desc">Clean, well structured style sheets that contributes to smooth user experience.</p>
+                <p class="about-skills-css_list">How I design:</p>
+                <ul>
+                    <li>Pen & paper</li>
+                    <li>Figma</li>
+                    <li>Font awesome</li>
+                </ul>
             </div>
         </section>
         <section id="work">
             <div class="work-container">
                 <h2 class="work-container-intro">My Recent Work</h2>
                 <p class="work-container-desc">Check out some of the latest project I've been working on. Want to learn more about?</p>
-                <a href="#" class="work-container-contact">Drop me a note</a>
+                <a href="#contact" class="work-container-contact">Drop me a note</a>
+            </div>
+            <div class="project-portfolio">
+                <div class="project-portfolio-container">
+                    <img src="./img/project.png" alt="Project1">
+                    <h2 class="project-portfolio-title">
+                        Project #1
+                    </h2>
+                </div>
+            </div>
+            <div class="project-portfolio">
+                <div class="project-portfolio-container">
+                    <img src="./img/project.png" alt="Project2">
+                    <h2 class="project-portfolio-title">
+                        Project #2
+                    </h2>
+                </div>
+            </div>
+            <div class="project-portfolio">
+                <div class="project-portfolio-container">
+                    <img src="./img/project.png" alt="Project3">
+                    <h2 class="project-portfolio-title">
+                        Project #3
+                    </h2>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -67,9 +107,9 @@
         </section>
     </main>
     <footer>
-        <div class="footer-container">
+        <!-- <div class="footer-container">
             <a href="#main"><img src="./img/logo.svg" alt="GS"></a>
-        </div>
+        </div> -->
         <div class="footer-container-social">
             <ul class="footer-container-social-platform">
                 <li class="footer-social-item">
@@ -87,6 +127,9 @@
             <p class="footer-copyright-item">Copyright</p>
             <span class="footer-copyright-item">&copy;</span>
             <p class="footer-copyright-item">2022 Gyozo Sipocz</p>
+        </div>
+        <div class="footer-return">
+            <a href="#header"><img src="./img/arrow-up-solid.svg" alt="arrow"></a>
         </div>
     </footer>
 </body>
