@@ -1,136 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Győző Sipőcz | Frontend Developer</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyozo Sipocz | Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header id="header">
-        <div class="navbar-logo">
-            <a href="#main"><img class="header-logo" src="./img/logo.svg" alt="GS"></a>
+  <header>
+    <a href="#home" class="header-logo">Gyozo</a>
+    <nav>
+      <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+      <label for="nav-checkbox">
+        <span class="nav-checkbox__btn">
+          <span class="nav-checkbox__line1"></span>
+          <span class="nav-checkbox__line2"></span>
+          <span class="nav-checkbox__line3"></span>
+        </span>
+      </label>
+      <ul class="header-list">
+        <li class="header-list__item"><a href="#home">Home</a></li>
+        <li class="header-list__item"><a href="#about">About</a></li>
+        <li class="header-list__item"><a href="#work">Work</a></li>
+        <li class="header-list__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <section id="home">
+    <div class="home-container">
+      <h1 class="home-hello">Hi, my name is</h1>
+      <h2 class="home-name">Gyozo Sipocz.</h2>
+      <h2 class="home-pro">I'm a frontend <br>developer.
+       <!--  <div class="home-pro__high">Developer</div> -->
+      </h2>
+      <!-- <p class="home-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima nemo tenetur ea nulla nihil pariatur, nam, neque odio, harum qui dolor? Quas, adipisci? Amet!</p> -->
+      <a href="#contact" class="home-btn">Say Hello!</a>
+    </div>
+    <img src="./img/gs.png" alt="Gyozo Sipocz" class="home-pic">
+  </section>
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-container">
+      <div class="about-tech">
+        <!-- <img src="./img/gs-alt.png" alt="Gyozo Sipocz" class="about-tech__pic"> -->
+        <div class="about-tech__container">
+          <p class="about-tech__title">I'm working with:</p>
+          <ul class="about-tech__list">
+            <li class="about-tech__item">HTML</li>
+            <li class="about-tech__item">CSS</li>
+            <li class="about-tech__item">JavaScript</li>
+            <li class="about-tech__item">WordPress</li>
+          </ul>
         </div>
-        <nav>
-            <ul class="header-list">
-                <li class="header-list_item"><a href="#about" class="header-list-about">About</a></li>
-                <li class="header-list_item"><a href="#work" class="header-list-work">Work</a></li>
-                <li class="header-list_item"><a href="#contact" class="header-hero">Say Hi!</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="main">
-            <div class="main-container">
-                <h2 class="main-title">Frontend Developer.</h2>
-                <p class="main-vision">I'm an enthusiastic frontend developer and I love what I do.</p>
-                <img src="./img/gs.png" alt=" Győző Sipőcz" class="main-img">
-            </div>
-        </section>
-        <section id="about">
-            <div class="about-container">
-                <h2 class="about-title">Hi, I'm Győző. It's a pleasure to meet you.</h2>
-                <p class="about-intro">I've gathered valuable experiences from different retail sales channels. My goal     is to turn those experiences into scalable digital products. Since I've started my professional career,     I've collaborated with people from all across the globe both on a remote and on-site setup. My natural  curiosity pushes me to learn new things, further improve my knowledge to feed my customers with  best-in-class services to deliver a flawless user experience. </p>
-            </div>
-        </section>
-        <section class="about-skills">
-            <div class="about-skills_col">
-                <img src="./img/html5.svg" alt="HTML5">
-                <h3 class="about-skills-html">HTML 5</h3>
-                <p class="about-skills-html_desc">I use simple HTML structures that are easy to maintain and scale up.</p>
-                <p class="about-skills-html_list">Tools I use:</p>
-                <ul>
-                    <li>Github</li>
-                    <li>Codesandbox</li>
-                    <li>Codepen</li>
-                </ul>
-            </div>
-            <div class="about-skills_col">
-                <img src="./img/css.svg" alt="CSS">
-                <h3 class="about-skills-css">CSS</h3>
-                <p class="about-skills-css_desc">Clean, well structured style sheets that contributes to smooth user experience.</p>
-                <p class="about-skills-css_list">How I design:</p>
-                <ul>
-                    <li>Pen & paper</li>
-                    <li>Figma</li>
-                    <li>Font awesome</li>
-                </ul>
-            </div>
-        </section>
-        <section id="work">
-            <div class="work-container">
-                <h2 class="work-container-intro">My Recent Work</h2>
-                <p class="work-container-desc">Check out some of the latest project I've been working on. Want to learn more about?</p>
-                <a href="#contact" class="work-container-contact">Drop me a note</a>
-            </div>
-            <div class="project-portfolio">
-                <div class="project-portfolio-container">
-                    <img src="./img/project.png" alt="Project1">
-                    <h2 class="project-portfolio-title">
-                        Project #1
-                    </h2>
-                </div>
-            </div>
-            <div class="project-portfolio">
-                <div class="project-portfolio-container">
-                    <img src="./img/project.png" alt="Project2">
-                    <h2 class="project-portfolio-title">
-                        Project #2
-                    </h2>
-                </div>
-            </div>
-            <div class="project-portfolio">
-                <div class="project-portfolio-container">
-                    <img src="./img/project.png" alt="Project3">
-                    <h2 class="project-portfolio-title">
-                        Project #3
-                    </h2>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2 class="contact-title">Interested in collaborating with me?</h2>
-            <h3 class="contact-desc">I'm always to open to talk about how I can contribute to the growth of your business.</h3>
-            <form action="https://formspree.io/f/mjvdblrv" class="contact-form" method="POST">
-                <input type="text" name="name" id="name" placeholder="Your Name">
-                <input type="email" name="email" id="email" placeholder="Your Email">
-                <textarea name="message" id="message" placeholder="Tell me briefly what I can help you with"></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <!-- <div class="footer-container">
-            <a href="#main"><img src="./img/logo.svg" alt="GS"></a>
-        </div> -->
-        <div class="footer-container-social">
-            <ul class="footer-container-social-platform">
-                <li class="footer-social-item">
-                    <a href="https://twitter.com/?lang=hu" target="_blank"><img src="./img/twitter.svg" alt="twitter"></a>
-                </li>
-                <li class="footer-social-item">
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin-in.svg" alt="linkedin"></a>
-                </li>
-                <li class="footer-social-item">
-                    <a href="https://github.com/gyozo-sipocz/gyozo-sipocz.github.io" target="_blank"><img src="./img/github.svg" alt="github"></a>
-                </li>
-            </ul>
+      </div>
+      <div class="about-content">
+        <h4 class="about-content__hi">Nice to meet you.</h4>
+        <h3 class="about-content__name">I'm Gyozo Sipocz.</h3>
+        <h4 class="about-content__hi">i create simple things and I love what I do.</h4>
+        <p class="about-content__text">I've gathered valuable experiences from different retail sales channels. My goal is to turn those experiences into scalable digital products. Since I've started my professional career, I've collaborated with people from all across the globe both on a remote and on-site setup. My natural curiosity pushes me to learn new things, further improve my knowledge to feed my customers with best-in-class services to deliver a flawless user experience.
+        </p>
+        <div class="about-content__container">
+          <a href="#contact" class="about-content__btn btn-contact">Let's talk!</a>
+          <a href="./Gyozo-Sipocz_CV.pdf" download class="about-content__btn btn-cv">Experiences</a>
         </div>
-        <div class="footer-copyright">
-            <p class="footer-copyright-item">Copyright</p>
-            <span class="footer-copyright-item">&copy;</span>
-            <p class="footer-copyright-item">2022 Gyozo Sipocz</p>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <h2 class="section-title">Work</h2>
+    <div class="work-container">
+      <div class="work-project">
+        <img src="./img/project.jpg" alt="project" class="work-project__pic">
+        <div class="work-project__container">
+          <h3>Project</h3>
+          <div class="work-project__link">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="footer-return">
-            <a href="#header"><img src="./img/arrow-up-solid.svg" alt="arrow"></a>
+      </div>
+      <div class="work-project">
+        <img src="./img/project.jpg" alt="project" class="work-project__pic">
+        <div class="work-project__container">
+          <h3>Project</h3>
+          <div class="work-project__link">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="work-project">
+        <img src="./img/project.jpg" alt="project" class="work-project__pic">
+        <div class="work-project__container">
+          <h3>Project</h3>
+          <div class="work-project__link">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="work-project">
+        <img src="./img/project.jpg" alt="project" class="work-project__pic">
+        <div class="work-project__container">
+          <h3>Project</h3>
+          <div class="work-project__link">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2 class="section-title">Let's collaborate!</h2>
+    <h3 class="contact-title_text">Tell me more about your project</h3>
+    <form class="contact-form"  action="https://formspree.io/f/mjvdblrv"
+    method="POST">
+      <input type="text" name="name" id="name" placeholder="your name">
+      <input type="email" name="email" id="email" placeholder="email">
+      <textarea name="message" id="message" placeholder="message"></textarea>
+      <input type="submit" value="let's go!">
+    </form>
+    <ul class="contact-soc">
+      <li class="contact-soc__item">
+        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li class="contact-soc__item">
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </li>
+      <li class="contact-soc__item">
+        <a href="https://github.com/gyozo-sipocz/gyozo-sipocz.github.io" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+      </li>
+    </ul>
+  </section>
+  </main>
+  <footer>
+    <div class="footer-copyright">
+      <p class="footer-corpyright__item">Copyright</p>
+      <span class="footer-corpyright__item">&copy;</span>
+      <p class="footer-corpyright__item">2022 Gyozo Sipocz</p>
+    </div>
+    <div class="footer-return">
+      <a href="#home">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
