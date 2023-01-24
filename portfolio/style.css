@@ -28,7 +28,6 @@
   body{
     background: var(--blue);
     font-family: 'Orbitron', sans-serif;
-    text-transform: lowercase;
   }
   
   .section-title{
