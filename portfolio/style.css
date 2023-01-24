@@ -1,3 +1,4 @@
+/*------------------------Base Starts------------------------*/
 :root{
     --blue:#0c1d36;
     --lightblue: #18428a;
@@ -28,6 +29,7 @@
   body{
     background: var(--blue);
     font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
   }
   
   .section-title{
@@ -36,8 +38,9 @@
     margin: 1rem 0 2rem;
     padding: 1rem;
   }
+/*--------------------------Base Ends--------------------------*/
   
-  /*--------------------------Header--------------------------*/
+/*------------------------Header Starts------------------------*/
   header{
     display: flex;
     flex-direction: row;
@@ -47,7 +50,6 @@
     width: 100vw;
     background: var(--blue);
     height: 5vh;
-    text-transform: lowercase;
     z-index: 10;
   }
   
@@ -135,8 +137,9 @@
   .header-list__item a:hover{
     box-shadow: 1px 1px 5px 1px var(--green)
   }
-  
-  /*--------------------------Home--------------------------*/
+ /*------------------------Base Ends------------------------*/
+
+/*-----------------------Home Starts------------------------*/
   #home{
     height: 100vh;
     display: flex;
@@ -185,8 +188,9 @@
     background: rgba(226, 230, 224, 0.2);
     box-shadow: 1px 1px 5px 1px var(--green);
   }
-  
-  /*--------------------------About--------------------------*/
+/*------------------------Home Ends------------------------*/
+
+/*----------------------About Starts----------------------*/
   #about{
     letter-spacing: 0.1rem;
   }
@@ -206,7 +210,7 @@
     flex-direction: column;
   }
   
-  .about-tech__pic{
+ /*  .about-tech__pic{
     width: 75vw;
     align-self: center;
     opacity: 0.3;
@@ -216,7 +220,7 @@
   
   .about-tech__pic:hover{
     opacity: 1;
-  }
+  } */
   
   
   .about-tech__container{
@@ -303,8 +307,9 @@
     background: rgba(95, 241, 208, 0.2);
     box-shadow: 1px 1px 5px 1px var(--textblue);
   }
+/*----------------------About Starts----------------------*/
   
-  /*--------------------------Work--------------------------*/
+/*--------------------------Work Starts--------------------------*/
   #work{
     padding: 2vh 0;
   }
@@ -323,12 +328,11 @@
     max-width: 450px;
     margin-top: 50px;
     box-shadow: 0.5rem 0.5rem var(--green), -0.5rem -0.5rem var(--green);
-    opacity: 0.3;
+    opacity: 1;
     transition: 300ms;
   }
   
   .work-project:hover{
-    opacity: 1;
     transform: translate(0, -10px);
   }
   
@@ -354,8 +358,9 @@
     background: rgba(95, 241, 208, 0.2);
     box-shadow: 1px 1px 5px 1px var(--green);
   }
-  
-  /*--------------------------Contact--------------------------*/
+/*--------------------------Work Starts--------------------------*/
+
+/*--------------------------Contact Starts--------------------------*/
   #contact{
     display: flex;
     flex-direction: column;
@@ -443,8 +448,9 @@
   .contact-soc__item a:hover{
     color: var(--green);
   }
-  
-  /*-------------------Footer-------------------*/
+/*--------------------------Contact Ends--------------------------*/
+
+/*-------------------Footer Starts-------------------*/
   footer{
     display: flex;
     justify-content: center;
@@ -488,10 +494,11 @@
     color: var(--green);
     border: 2px solid var(--green);
   }
+/*-------------------Footer Ends-------------------*/
+
+/*--------------------------mediaQuery Starts--------------------------*/
   
-  /*--------------------------mediaQuery--------------------------*/
-  
-  /*-------------------Header-------------------*/
+/*-------------------Header-------------------*/
   @media screen and (min-width: 768px){
     header nav{
       margin-right: 0px;
@@ -554,13 +561,8 @@
       bottom: 0vh;
       right: 5vw;
       margin-right: -8vh;
-      opacity: 0.3;
       transition: 300ms;
       filter: grayscale(50%);
-    }
-  
-    .home-pic:hover{
-      opacity: 1;
     }
   }
   
@@ -597,7 +599,6 @@
       bottom: 0vh;
       right: 15vw;
       margin-right: -8vh;
-      opacity: 0.3;
       transition: 300ms;
     }
   
@@ -705,3 +706,4 @@
       visibility: visible;
     }
    }
+/*--------------------------mediaQuery Starts--------------------------*/
