@@ -170,7 +170,7 @@
   }
   
   .home-pro{
-    color: var(--niceblue);
+    color: var(--textblue);
     font-size: 2rem;
     font-weight: 500;
     margin: 20px 0 80px 0;
@@ -317,7 +317,7 @@
   .work-project{
     background: var(--niceblue);
     width: 100%;
-    max-width: 450px;
+    max-width: 280px;
     margin-top: 50px;
     box-shadow: 0.5rem 0.5rem var(--green), -0.5rem -0.5rem var(--green);
     opacity: 1;
@@ -489,9 +489,32 @@
   }
 /*-------------------Footer Ends-------------------*/
 
-/*--------------------------mediaQuery Starts--------------------------*/
-  
-/*-------------------Header-------------------*/
+/*----------------------mediaQuery Starts----------------------*/
+
+  @media screen and (min-width: 576px){
+    #about{
+      padding: 0 50px;
+    }
+
+    .work-project{
+      max-width: 440px;
+    }
+
+    .contact-title_text{
+      font-size: 1.5rem;
+    }
+
+    .contact-form [type="submit"] {
+     width: 200px;
+     align-self: flex-end;
+     margin-right: 5%;
+    }
+
+    .footer-return{
+      visibility: visible;
+    }
+  }
+
   @media screen and (min-width: 768px){
     header nav{
       margin-right: 0px;
@@ -519,21 +542,7 @@
     .header-list__item a{
      padding: 0;
     }
-  
-  }
-  
-  @media screen and (min-width: 992px){
-    header a{
-      font-size: 1.5rem;
-    }
-  
-    .header-list__item a{
-      font-size: 1.5rem
-     }
-  }
-  
-  /*-------------------Home-------------------*/
-  @media screen and (min-width: 768px){
+
     #home{
       justify-content: center;
       align-items: flex-start;
@@ -558,10 +567,19 @@
       transition: 300ms;
       filter: grayscale(50%);
     }
+  
   }
   
   @media screen and (min-width: 992px){
-    .home-container{
+    header a{
+      font-size: 1.5rem;
+    }
+  
+    .header-list__item a{
+      font-size: 1.5rem
+     }
+
+     .home-container{
       margin-left: 5vw;
     }
     
@@ -580,8 +598,57 @@
     .home-btn{
       font-size: 1rem;
     }
+
+    #about{
+      height: 100vh;
+    }
+  
+  .about-tech{
+   width: 40%;
+ }
+  
+  .about-tech{
+    margin-right: 10vw;
   }
   
+ .about-tech__container{
+    height: 100%;
+  }
+  
+  .about-tech__pic{
+    width: 100%;
+  }
+  
+   .about-container{
+    flex-direction: row;
+    max-width: 950px;
+    margin: 50px auto;
+    margin-bottom: -200px;
+   }
+  
+   .about-tech__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   }
+  
+  .about-tech__item{
+    padding-top: 20px;
+   }
+
+  #work{
+    margin-top: -250px;
+  }
+
+  .work-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  }
+
   @media screen and (min-width: 1200px){
     .home-container{
       margin-left: 10vw;
@@ -612,92 +679,4 @@
       font-size: 1.5rem;
     }
   }
-  
-  /*-------------------About-------------------*/
-  @media screen and (min-width: 576px){
-    #about{
-      padding: 0 50px;
-    }
-  }
-  
-  @media screen and (min-width: 992px){
-    #about{
-      height: 100vh;
-    }
-  
-    .about-tech{
-      width: 40%;
-    }
-  
-    .about-tech{
-      margin-right: 10vw;
-    }
-  
-    .about-tech__container{
-      height: 100%;
-    }
-  
-    .about-tech__pic{
-      width: 100%;
-    }
-  
-   .about-container{
-    flex-direction: row;
-    max-width: 950px;
-    margin: 50px auto;
-    margin-bottom: -200px;
-   }
-  
-   .about-tech__list{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-   }
-  
-   .about-tech__item{
-    padding-top: 20px;
-   }
-  
-  }
-  
-  /*-------------------Work-------------------*/
-  @media screen and (min-width: 992px){
-    #work{
-      margin-top: -250px;
-    }
-  
-    .work-container{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-  }
-  
-  @media screen and (min-width: 1200px){
-    #work{
-      margin-top: -100px
-  }
-  
-  /*-------------------Contact-------------------*/
-  @media screen and (min-width: 576px){
-   .contact-title_text{
-    font-size: 1.5rem;
-   }
-  
-   .contact-form [type="submit"] {
-    width: 200px;
-    align-self: flex-end;
-    margin-right: 5%;
-   }
-  
-  }
-  
-  /*-------------------Footer-------------------*/
-  @media screen and (min-width: 576px){
-    .footer-return{
-      visibility: visible;
-    }
-   }
-/*--------------------------mediaQuery Starts--------------------------*/
+  /*----------------------mediaQuery Ends----------------------*/
