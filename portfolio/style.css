@@ -556,6 +556,7 @@
     .home-pic{
       display: block;
       position: absolute;
+      max-height: 100%;
       width: 70vw;
       max-width: 650px;
       bottom: 0vh;
