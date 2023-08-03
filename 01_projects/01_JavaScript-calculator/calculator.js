@@ -132,4 +132,95 @@ deleteButton.addEventListener('click', button => {
   calculator.updateDisplayField()
 })
 
+document.addEventListener('keydown', (event) => {
+  const key = event.key;
+
+  switch (key) {
+    case '0':
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+    case '7':
+    case '8':
+    case '9':
+      calculator.appendNumber(key);
+      calculator.updateDisplayField();
+      break;
+    case '.':
+      calculator.appendNumber(key);
+      calculator.updateDisplayField();
+      break;
+    case '+':
+    case '-':
+    case '*':
+    case '/':
+      calculator.selectOperation(key);
+      calculator.updateDisplayField();
+      break;
+    case 'Enter':
+      calculator.compute();
+      calculator.updateDisplayField();
+      break;
+    case 'Backspace':
+      calculator.delete();
+      calculator.updateDisplayField();
+      break;
+    case 'Escape':
+      calculator.clear();
+      calculator.updateDisplayField();
+      break;
+  }
+});
+
+function handleNumberInput(number) {
+  calculator.appendNumber(number);
+  calculator.updateDisplayField();
+}
+
+function handleOperationInput(operation) {
+  calculator.selectOperation(operation);
+  calculator.updateDisplayField();
+}
+
+function handleEquals() {
+  calculator.compute();
+  calculator.updateDisplayField();
+}
+
+function handleDelete() {
+  calculator.delete();
+  calculator.updateDisplayField();
+}
+
+function handleAllClear() {
+  calculator.clear();
+  calculator.updateDisplayField();
+}
+
+/*numberButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    handleNumberInput(button.innerText);
+  });
+});*/
+
+operationButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    handleOperationInput(button.innerText);
+  });
+});
+
+equalsButton.addEventListener('click', () => {
+  handleEquals();
+});
+
+deleteButton.addEventListener('click', () => {
+  handleDelete();
+});
+
+allClearButton.addEventListener('click', () => {
+  handleAllClear();
+});
 
