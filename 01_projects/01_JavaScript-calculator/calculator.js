@@ -200,12 +200,6 @@ function handleAllClear() {
   calculator.updateDisplayField();
 }
 
-/*numberButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    handleNumberInput(button.innerText);
-  });
-});*/
-
 operationButtons.forEach((button) => {
   button.addEventListener('click', () => {
     handleOperationInput(button.innerText);
