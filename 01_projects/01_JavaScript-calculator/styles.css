@@ -67,7 +67,6 @@ box-shadow: 24vw 9vh 1px 0px #fff,12vw -24vh 0px 1px #fff,-45vw -22vh 0px 0px #f
 animation: zoom 16s alternate infinite; 
 }
 
-/*
 @keyframes zoom {
   0%{
       transform: scale(1);
@@ -76,4 +75,3 @@ animation: zoom 16s alternate infinite;
       transform: scale(1.5);
   }
 }
-*/

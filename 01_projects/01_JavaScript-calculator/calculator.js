@@ -42,7 +42,9 @@ class Calculator {
     let computation
     const prev = parseFloat(this.previous)
     const curr = parseFloat(this.current)
+
     if(isNaN(prev) || isNaN(curr)) return
+
     switch (this.operation) {
       case '+':
           computation = prev + curr
@@ -57,20 +59,49 @@ class Calculator {
           computation = prev / curr
           break
       default:
-          return
+          return;
     }
-    this.current = computation
+    this.current = computation.toString()
     this.operation = undefined
     this.previous = ''
   }
 
+  getDisplayNumber(number) {
+    const stringNumber = number.toString()
+    const integerDigits = parseFloat(stringNumber.split('.')[0])
+    const decimalDigits = stringNumber.split('.')[1]
+    let integerDisplay
+
+    if (isNaN(integerDigits)) {
+      integerDisplay = ''
+    } else {
+      integerDisplay = integerDigits.toLocaleString('en', {
+        maximumFractionDigits: 0 })
+    }
+    if (decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`
+    } else {
+      return integerDisplay
+    }
+  }
+
   updateDisplayField() {
-    this.currentTextElement.innerText = this.current
-    if(this.operation != null) {
-      this.previousTextElement.innerText = this.previous
+    if (this.current === NaN) {
+      this.currentTextElement.innerText = 'Cannot divide by zero'
+    } else {
+      this.currentTextElement.innerText = this.getDisplayNumber(this.current)
+    }
+
+    if (this.operation != null) {
+      this.previousTextElement.innerText = 
+      `${this.getDisplayNumber(this.previous)} ${this.operation}`
+    } else {
+      this.previousTextElement.innerText = ''
     }
   }
 }
+
+const calculator = new Calculator(previousTextElement, currentTextElement)
 
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -101,4 +132,4 @@ deleteButton.addEventListener('click', button => {
   calculator.updateDisplayField()
 })
 
-const calculator = new Calculator(previousTextElement, currentTextElement)
+
