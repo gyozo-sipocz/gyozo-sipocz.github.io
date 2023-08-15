@@ -46,7 +46,7 @@ export default function App() {
   return (
     <>
       <NewTodoForm onSubmit={addTodo}/>
-      <h1 className="header">ToDo List</h1>
+      <h1 className="header">Tennivalók Listája:</h1>
       <ToDoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
     </>
   )
